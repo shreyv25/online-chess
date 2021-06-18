@@ -1,4 +1,5 @@
-game = new Chess();
+var board,
+  game = new Chess();
 var socket = io();
 
 var color = "white";
@@ -82,7 +83,7 @@ var onDrop = function (source, target) {
         to: target,
         promotion: 'q' // NOTE: always promote to a queen for example simplicity
     });
-    
+
 
 
     // illegal move
